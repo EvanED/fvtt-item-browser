@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import 'mocha';
 
-import { seven } from "../src/module/settings"
+import { seven } from "./module/settings"
 
 describe('calculate', function() {
   it('add', function() {

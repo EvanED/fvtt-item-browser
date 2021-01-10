@@ -9,8 +9,8 @@
     "build:watch": "gulp watch",
     "clean": "gulp clean && gulp link --clean",
     "update": "npm install --save-dev gitlab:foundry-projects/foundry-pc/foundry-pc-types",
-    "test": "mocha -r ts-node/register tests/**/*.test.ts",
-    "test:watch": "mocha --watch --watch-files tests --watch-files src -r ts-node/register tests/**/*.test.ts",
+    "test": "mocha -r ts-node/register src/**/*.spec.ts",
+    "test:watch": "mocha --watch --watch-files src -r ts-node/register src/**/*.spec.ts",
     "coverage": "nyc -r lcov -e .ts -x \"*.test.ts\" npm run test"
   },
   "author": "",
